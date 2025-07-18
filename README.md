@@ -1,26 +1,73 @@
-# Reliance Sales Report (Power BI Project)
+Key Features
+Data imported from CSV files into SQL Server / MySQL
 
-## 📊 Project Overview
-This dashboard visualizes the sales performance of Reliance across various regions, sales channels, and product types.
+Power BI connected to SQL for creating visual dashboards
 
-## 📁 Folder Structure
+Data cleaned and transformed using Power BI tools
+
+Final dashboard includes KPIs, trends, and breakdowns
+
+📌 Insights from the Dashboard
+Total Profit and Revenue trend by month
+
+Region-wise sales performance
+
+Most and least profitable item types
+
+Online vs Offline sales breakdown
+
+High-priority order analysis
+
+Shipment vs Order date gap check
+
+🧮 DAX Measures Used
+DAX
+Copy
+Edit
+RegionCount = DISTINCTCOUNT(reliance_sales[Region])  
+TotalProfit = SUM(reliance_sales[Total_Profit])
+I also added some calculated columns and filters for better insights.
+
+📈 Visuals Included
+KPI Cards: Units Sold, Total Revenue, Total Profit
+
+Bar Chart by Region
+
+Line Chart for Monthly Trends
+
+Pie Chart showing Sales Channel
+
+Slicers for Region, Item Type, and Order Priority
+
+All visuals have proper titles, labels, and custom colors
+
+📁 Folder Structure
+mathematica
+Copy
+Edit
 Reliance-Sales-Report/
-├── Dataset/
-├── Report/
-├── Screenshots/
-├── Documentation/
+├── Dataset/            → Cleaned CSV files  
+├── Report/             → Power BI .pbix file  
+├── Screenshots/        → Charts and visuals  
+├── Documentation/      → Notes, data dictionary, etc.  
+├── README.md           → Overview of the project
+🛠 Tools Used
+Power BI
 
+SQL Server / MySQL
 
-## 🧾 Files Included
-- `Reliance_Sales_Report.pbix`: Main Power BI file
-- `reliance_sales.csv`: Raw dataset
-- Screenshots of visuals
-- Data dictionary & business insights markdown files
+Excel / CSV for raw data
 
-## 🔍 Key Insights
-- Total profit trends
-- Region and item-type performance
-- Online vs Offline sales analysis
+GitHub for uploading the project
 
-## ✍️ Author
-Md Afrose
+💡 Business Value
+This dashboard helps users and managers to:
+
+Understand sales trends across regions and products
+
+Monitor monthly profits and revenue
+
+Compare online and offline channels
+
+Take decisions based on order priority and shipment patterns
+
